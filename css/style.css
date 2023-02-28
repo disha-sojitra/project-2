@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@800&display=swap');
+
+:root {
+    --font: font-family: 'Roboto Slab', serif;
+    --white: #ffffff;
+    --black: #262626;
+    --color: #262626;
+    --code:#be9c79;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.justify-content {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    z-index: 9999;
+    position: absolute;
+}
+
+.logo img {
+    width: 141px;
+    padding: 10px;
+
+}
+
+.menu {
+    align-self: center;
+}
+
+header .menu ul li {
+    padding: 5px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+header ul li:first-child {
+    border-bottom: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--font);
+}
+
+menu ul li :first-child {
+    border-bottom: 2px solid #ffffff;
+}
+
+
+
+
+.section-bg {
+    width: 100%;
+    height: 773px;
+    background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.section-bg2 {
+    width: 100%;
+    height: 773px;
+    background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.section-bg3 {
+    width: 100%;
+    height: 773px;
+    background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-3.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.centent {
+    width: 50%;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.centent .img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 220px;
+    bottom: 230px;
+}
+
+.centent h1 {
+    white-space: nowrap;
+    font-size: 68px;
+    line-height: 78px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Marcellus', serif;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+
+}
+
+.centent .img-1 {
+    position: absolute;
+    top: 70px;
+    left: 180px;
+
+}
+
+.img-1 {
+    padding: 19px;
+}
+
+p {
+    color: aliceblue;
+    bottom: -10px;
+    font-size: 12px;
+    text-align: center;
+    transform: translateY(50%);
+    position: absolute;
+    right: 61px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.btn {
+    padding: 15px 40px 15px 40px;
+    background-color: rgb(219, 158, 100);
+    display: inline-block;
+    position: absolute;
+    bottom: -180px;
+    left: 186px;
+    text-transform: uppercase;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Marcellus', serif;
+}
+
+
+
+
+.drop-down,
+.mega-menu {
+    width: 20%;
+    background-color: #262626;
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+
+}
+
+.drop-down ul {
+    margin-left: 0;
+    margin-bottom: 10px;
+
+}
+
+.drop-down ul li:first-child,
+.mega-menu ul li:first-child {
+    border: none;
+}
+
+.drop-down ul li:last-child,
+.mega-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.menu ul li:hover .drop-down,
+.menu ul li:hover .mega-menu {
+    display: block;
+    opacity: 2;
+    visibility: visible;
+}
+
+.drop-down ul li a {
+    font-size: 20px;
+    font-family: var(--font);
+
+}
+
+.mega-menu {
+    width: 100%;
+    background-color: #262626;
+    position: absolute;
+
+    left: 0;
+    top: 80px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box-22 {
+    width: 25%;
+    float: left;
+}
+
+
+.mega-menu .box-22:first-child {
+    border: none;
+}
+
+.mega-menu ul li a {
+    color: white;
+}
+
+.mega-menu ul li a:first-child {
+    border-left: none;
+}
+
+.mega-menu ul li a img {
+    width: 50%;
+    height: 50%;
+
+}
+
+.mega-menu ul li a  {
+    font-size: 20px;
+    font-family: var(--font);
+
+}
+
+/* section-bg4 */
+.section-bg4{
+    width: 100%;
+    height: 320px;
+    background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+ 
+}
+.img1 img{
+    width: 100%;
+    align-items: center;
+    margin: 20px;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-self{
+    justify-content: center;
+}
+/* section-bg1 */
+.section-bg1{
+    width: 100%;
+    height: 320px;
+    background-image: url('');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+ 
+}
+.img1 img{
+    width: 100%;
+    align-items: center;
+    margin: 20px;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-self{
+    justify-content: center;
+}
+/*  section-bg5*/
+.section-bg5{
+    width: 100%;
+    background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg');
+    background-size: cover; 
+    position: relative;
+}
+.centent2{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    font-family: var(--font);
+    color: #262626;
+   
+}
+.section-bg5 img{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+h5{
+    color:black;
+    font-size: 15px;
+    opacity: 5;
+}
+h4{
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 1.55em;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: none;
+    margin-top: 10px;
+}
+h6{
+    font-size: 15px;
+}
+
+.coffee22{
+    width: 100%;
+}
+.coffee-22 img{
+    width: 100%;
+}
+.coffee-22{
+    width: 25%;
+    text-align: center;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+h5{
+    font-family:var(--font);
+    font-size: 17px;
+    font-weight: 700;
+}
+.owl-dots{
+      display:none;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+
+/* gallary */
+
+/* .gallery {
+    height: 746px;
+    padding: 65px 0;
+} */
+.gallary .box-24 img{
+    width: 100%;
+}
+
+.box-24{
+    width: 24%;
+    margin: 0 7px ;
+}
+
+/* logo */
+.logo .box24 img{
+    width: 100%;
+}
+
+.box24{
+    width: 16%;
+    /* margin: 0 5px ; */
+    size: 25px;
+}
+
+/* lorem */
+.section-bg9{
+width: 100%;
+
+background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/p2-background-img-1.jpg');
+position: absolute;
+background-size: cover;
+
+}
+
+/* footer */
+.section-bg6 {
+    width: 100%;
+    height: 545px;
+   background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/footer-top-img-1.jpg');  
+    background-size: cover;
+    position: relative;
+ 
+}
+
+.centent6 img{
+    width: 100px;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+.centent6 h4{
+    color: var(--white);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 350px;
+    text-align: center;
+}
+.centent6 h2{
+    font-size: 20px;
+    color: var(--white);
+    margin-top: 50px;
+    margin-left: 500px;
+
+}
+.centent6 h3{
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    margin-left:370px;
+    word-spacing: 5px;
+}
+.centent6 h1{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-left:420px;
+    margin-top: 50px;
+}
+form input{
+    width: 35%;
+    /* height: auto; */
+    margin-left: 400px;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: var(--font);
+}
+
+/* header2 */
+.section-bg7{
+    
+        width: 100%;
+        height: 70px;
+        background-color: var(--black);
+        background-size: cover;
+        position: relative;  
+        margin-left: -5px;
+}
+.centent7 h6{
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.box28{
+    font-family: var(--font);
+    font-size: 18px;
+    margin-left: 400px;
+    margin-top: -20px;
+ 
+}
+ .div3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 900px;
+    margin-top:-20px ;
+    
+
+
+}
+.box28 a{
+    padding: 15px;
+}
+.box28 ul li {
+    list-style: none;
+
+}
+
+
+
+
+  /* offer */
+.offer .centent2 .coffee-22 img{
+    width: 33%;
+}
+.coffee-22 h5{
+    font-family: var(--font);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 50px;
+    text-align: center;
+    font-family: 15px;
+    
+}
+.coffee-22 h6{
+    font-family: var(--font);
+    color: grey;
+    text-align: center;
+}
+
+/* lorem */
+
+.section-bg11 {
+    width: 100%;
+ 
+   
+    background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/p2-background-img-1.jpg');
+    background-size: cover;
+    position:absolute;
+ 
+}
+
+.centent11 img{
+    width: 100%;
+   height: auto;
+   position:relative;
+
+
+}
+
+
+
+/* coffee-herald */
+.coffee-herald{
+    background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg');
+}
+.coffee-herald .centent2 .coffee22 img{
+    margin-left: -50px;
+     width: 400px;
+     padding: 20px;
+}
+
+
+.coffee-herald .centent2 .coffee22 h5{
+   word-spacing: 5px;
+   font-size: 20px;
+   padding: 10px;
+}
+.coffee-herald .centent2 h2{
+    color: black;
+    font-size: 40px;
+    word-spacing: 10px;
+
+}
+.coffee-herald .centent2 h4{
+    color: grey;     
+
+}
+
+/* .coffee-brand */
+.coffee-brand{
+    width: 1140px;
+}
+.coffee-brand .centent2 .coffee-22{
+  padding-left: 20px;
+}
+.coffee-brand .centent2 .coffee-22 h1{
+    font-size: 50px;
+    font-family: var(--font);
+    color: var(--code);
+    padding: 20px;
+}
+.coffee-brand .centent2 .coffee-22 h5{
+    color: var(--color);
+    font-family: var(--font);
+    /* padding: 20px; */
+}
+.coffee-brand .centent2 .coffee-22 h6{
+    font-family: var(--font);
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+}
+.coffee-brand .centent2{
+    margin-left: 350px;
+}
